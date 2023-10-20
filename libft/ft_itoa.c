@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 22:47:10 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/20 17:55:08 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 18:13:32 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/20 18:21:27 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char *ft_itoa(int n)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		return (1);
-	}
-	return (0);
+
 }
+
+
+/*
+Bir int değeri al,
+Sonra bu değeri 
+*/

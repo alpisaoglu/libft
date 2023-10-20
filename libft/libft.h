@@ -6,7 +6,7 @@
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 15:44:52 by myayla            #+#    #+#             */
-/*   Updated: 2023/10/14 09:24:55 by aisaoglu         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:57:58 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,7 @@ int		ft_atoi(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 void	*ft_memmove(void *dest, const void *src, size_t n);
-char 	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, const char *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 #endif

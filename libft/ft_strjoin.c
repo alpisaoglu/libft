@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 22:47:10 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/20 17:55:08 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 13:32:14 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/20 17:54:39 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strjoin(char const *s1, const char *s2)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		return (1);
-	}
-	return (0);
+	char	*str;
+	size_t	len;
+
+	if (!s1 || !s2)
+		return (0);
+	len = ft_strlen(s1) + ft_strlen(s2);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (0);
+	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
+	ft_strlcat(str, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
+	return (str);
 }
