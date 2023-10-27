@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:04:05 by muscakir          #+#    #+#             */
-/*   Updated: 2023/10/14 01:57:02 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/12 12:29:36 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:56:08 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+	unsigned char	*p1;
+	unsigned char	*p2;
 	size_t			i;
-	unsigned char	*buffer1;
-	unsigned char	*buffer2;
 
-	buffer1 = (unsigned char *)s1;
-	buffer2 = (unsigned char *)s2;
 	i = 0;
-	if (n == 0)
-		return (0);
-	while ((buffer1[i] == buffer2[i]) && i < n - 1)
+	p1 = (unsigned char *)s1;
+	p2 = (unsigned char *)s2;
+	while (i < n)
+	{
+		if (p1[i] != p2[i])
+			return (p1[i] - p2[i]);
 		i++;
-	return (buffer1[i] - buffer2[i]);
+	}
+	return (0);
 }

@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 16:50:56 by musacikg          #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:49 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/24 18:13:22 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:55:52 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		return (c - 32);
-	}
-	return (c);
-}
+	t_list	*tmp;
+	t_list	*new;
 
-// int main()
-// {
-//     int c = 'z';
-//     printf("%c", ft_toupper(c));
-// }
+	if (lst == NULL || f == NULL)
+		return (NULL);
+	tmp = NULL;
+	while (lst)
+	{
+		new = ft_lstnew((*f)(lst->content));
+		if (!new)
+		{
+			ft_lstclear(&tmp, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&tmp, new);
+		lst = lst->next;
+	}
+	return (tmp);
+}

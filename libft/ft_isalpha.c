@@ -5,18 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 22:47:10 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/20 17:55:08 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/09 15:02:28 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:54:58 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
+	if ((c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
-	}
 	return (0);
 }

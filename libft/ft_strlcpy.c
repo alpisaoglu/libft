@@ -5,21 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:22:39 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 04:03:05 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 18:28:30 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:57:12 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
 	i = 0;
-	if (dstsize > 0)
+	if (size > 0)
 	{
-		while (src[i] && i < (dstsize - 1))
+		while (src[i] && i < size - 1)
 		{
 			dst[i] = src[i];
 			i++;
@@ -27,8 +27,14 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 		dst[i] = 0;
 	}
 	while (src[i])
-	{
 		i++;
-	}
 	return (i);
 }
+
+// int main()
+// {
+//     char dst[6] = "omerxs";
+//     char src[7] = "mustafa";
+//     ft_strlcpy(dst, src, 7);
+//     printf("%s", dst);
+// }

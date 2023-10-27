@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:04:03 by muscakir          #+#    #+#             */
-/*   Updated: 2023/10/13 23:45:29 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/12 12:09:35 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:56:03 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,16 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*buffer;
+	unsigned char	*str;
+	unsigned char	c2;
 
-	buffer = (unsigned char *)s;
+	str = (unsigned char *)s;
+	c2 = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
-		if (*buffer == (unsigned char)c)
-			return (buffer);
-		buffer++;
+		if (str[i] == c2)
+			return ((void *)(s + i));
 		i++;
 	}
 	return (NULL);

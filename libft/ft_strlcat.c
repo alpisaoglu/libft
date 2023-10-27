@@ -5,28 +5,36 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:25:08 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 01:56:51 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 18:28:38 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:57:09 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	dsize;
+	size_t	j;
 
-	dsize = 0;
-	while (dest[dsize] != '\0' && dsize < dstsize)
-		dsize++;
-	i = dsize;
-	while (src[dsize - i] && dsize +1 < dstsize)
+	j = 0;
+	while (dst[j] && j < size)
 	{
-		dest[dsize] = src[dsize - i];
-		dsize++;
+		j++;
 	}
-	if (i < dstsize)
-		dest[dsize] = '\0';
+	i = j;
+	while (src[j - i] && j + 1 < size)
+	{
+		dst[j] = src[j - i];
+		j++;
+	}
+	if (i < size)
+		dst[j] = '\0';
 	return (i + ft_strlen(src));
 }
+
+// int main()
+// {
+//     char dst[] = "fatih";
+//     printf("%zu", ft_strlcat(dst, "lorem ipsum dolor sit amet", 15));
+// }

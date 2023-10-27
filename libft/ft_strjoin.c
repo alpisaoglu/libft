@@ -5,25 +5,43 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 13:32:14 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/20 17:54:39 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/14 00:49:28 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:57:05 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, const char *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	size_t	len;
+	char	*s3;
+	size_t	n;
+	size_t	i;
+	size_t	j;
 
-	if (!s1 || !s2)
+	i = 0;
+	j = 0;
+	n = ft_strlen(s1) + ft_strlen(s2) + 1;
+	s3 = (char *)malloc(n);
+	if (s3 == 0)
 		return (0);
-	len = ft_strlen(s1) + ft_strlen(s2);
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (!str)
-		return (0);
-	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
-	ft_strlcat(str, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
-	return (str);
+	while (s1[i])
+	{
+		s3[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+	{
+		s3[i + j] = s2[j];
+		j++;
+	}
+	s3[i + j] = '\0';
+	return (s3);
 }
+// int main()
+// {
+//     char *str1 = "fatih";
+//     char *str2 = "furkan";
+
+//     printf("%s",ft_strjoin(str1,str2));
+// }

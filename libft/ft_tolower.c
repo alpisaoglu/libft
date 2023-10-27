@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:28:18 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 02:09:19 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 18:28:01 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:57:45 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,15 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
-		c += 32;
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (c + 32);
+	}
 	return (c);
 }
+
+// int main()
+// {
+//     int c = 'C';
+//     printf("%c", ft_tolower(c));
+// }

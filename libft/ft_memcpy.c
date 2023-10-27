@@ -5,28 +5,36 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:18:20 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 01:57:09 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/12 20:21:28 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:56:15 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*p1;
-	unsigned char	*p2;
-	size_t			i;
+	size_t	i;
+	char	*dst2;
+	char	*src2;
 
-	p1 = (unsigned char *)dst;
-	p2 = (unsigned char *)src;
+	dst2 = (char *)dst;
+	src2 = (char *)src;
 	i = 0;
-	if (!dst && !src)
-		return (NULL);
+	if (dst2 == NULL && src2 == NULL)
+		return (0);
 	while (i < n)
 	{
-		p1[i] = p2[i];
+		dst2[i] = src2[i];
 		i++;
 	}
-	return (p1);
+	return (dst);
 }
+
+// int main()
+// {
+// char dest[9] = "123456789";
+// char src[4] = "abcd";
+// ft_memcpy(dest, src, 4);
+// printf("%s",dest);
+// }

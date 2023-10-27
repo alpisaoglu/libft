@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 16:50:56 by musacikg          #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:49 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/24 11:59:13 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:55:59 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_lstsize(t_list *lst)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		return (c - 32);
-	}
-	return (c);
-}
+	int	i;
 
+	i = 0;
+	while (lst != NULL)
+	{
+		i++;
+		lst = lst->next;
+	}
+	return (i);
+}
 // int main()
 // {
-//     int c = 'z';
-//     printf("%c", ft_toupper(c));
+// 	t_list	*str = NULL;
+// 	str = ft_lstnew("fatih");
+
+// 	int nodecount = ft_lstsize(str);
+// 	printf("%d",nodecount);
+// 	return (0);
 // }

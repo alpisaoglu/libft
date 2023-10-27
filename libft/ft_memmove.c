@@ -5,30 +5,39 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:19:50 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 01:57:12 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/13 14:45:18 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:56:19 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char			*d;
-	const unsigned char		*s;
-	int						h;
+	char		*dst2;
+	const char	*src2;
 
-	h = (int)n;
-	if (dest == src)
-		return (dest);
-	else if (dest < src)
-		dest = ft_memcpy(dest, src, n);
-	else
+	src2 = (const char *)src;
+	dst2 = (char *)dst;
+	if (dst2 == src2)
 	{
-		d = (unsigned char *)dest;
-		s = (const unsigned char *)src;
-		while (h--)
-			d[h] = s[h];
+		return (dst);
 	}
-	return (dest);
+	if (dst2 < src2 || dst2 >= src2 + len)
+	{
+		return (ft_memcpy(dst, src, len));
+	}
+	while (len > 0)
+	{
+		dst2[len - 1] = src2[len - 1];
+		len--;
+	}
+	return (dst);
 }
+// int main()
+// {
+// 	char dst[9] = "123456789";
+// 	char src[4] = "abcd";
+// 	ft_memcpy(dst, src, 4);
+// 	printf("%s",dst);
+// }

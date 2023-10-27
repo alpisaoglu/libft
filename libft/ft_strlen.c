@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 22:58:44 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 01:56:24 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 18:28:23 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:57:16 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlen(const char *s)
 
 	i = 0;
 	while (s[i] != '\0')
+	{
 		i++;
+	}
 	return (i);
 }

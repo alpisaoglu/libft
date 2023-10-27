@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 16:50:56 by musacikg          #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:49 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/21 20:13:17 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:55:56 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+t_list	*ft_lstnew(void *content)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		return (c - 32);
-	}
-	return (c);
+	t_list	*str;
+
+	str = NULL;
+	str = (t_list *)malloc(sizeof(t_list));
+	if (!str)
+		return (NULL);
+	str->content = content;
+	str->next = NULL;
+	return (str);
 }
 
 // int main()
 // {
-//     int c = 'z';
-//     printf("%c", ft_toupper(c));
+// 	t_list *x;
+// 	x = ft_lstnew("furkan");
+// 	printf("%s",x->content);
 // }

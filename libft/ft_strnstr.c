@@ -5,34 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 23:04:34 by muscakir          #+#    #+#             */
-/*   Updated: 2023/10/13 23:46:09 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/12 18:53:54 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 18:16:34 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *string, const char *search, size_t len)
 {
 	size_t	i;
-	size_t	c;
-	size_t	n_len;
+	size_t	j;
 
 	i = 0;
-	n_len = ft_strlen(needle);
-	if (haystack == NULL)
-		return (NULL);
-	if (n_len == 0 || haystack == needle)
-		return ((char *)haystack);
-	while (((char *)(haystack))[i] != '\0' && i < len)
+	j = 0;
+	if (search[j] == '\0')
+		return ((char *)string);
+	while (string[i] != '\0')
 	{
-		c = 0;
-		while (((char *)(haystack))[i + c] != '\0' && needle[c] != '\0'
-			&& ((char *)(haystack))[i + c] == needle[c] && i + c < len)
-			c++;
-		if (c == n_len)
-			return ((char *)(haystack + i));
+		while (string[i + j] == search[j] && string[i + j] != '\0' && \
+		(i + j) < len)
+			j++;
+		if (search[j] == '\0')
+			return ((char *)string + i);
 		i++;
+		j = 0;
 	}
 	return (0);
 }

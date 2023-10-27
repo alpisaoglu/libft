@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 22:55:05 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 03:54:28 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/09 15:50:58 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:55:19 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 22:47:14 by aisaoglu          #+#    #+#             */
-/*   Updated: 2023/10/14 01:57:29 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/20 18:29:04 by flus              #+#    #+#             */
+/*   Updated: 2023/10/27 17:55:15 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,10 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
+
+/*
+int main()
+{
+	printf("%d", ft_isdigit('1'));
+}
+*/
