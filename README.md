@@ -6,56 +6,56 @@
 ### :exclamation: MANDATORY PART 
 | S.No | **Function** | **Description** | 
 |------|----------|-------------|
-| 1.| [isAlnum](Libft/ft_isalnum.c) | Checks whether the string has alphabets and numbers; if true returns 1|
-| 2.| [isAlpha](Libft/ft_isalpha.c) | Read the string: If there is alphabets- it should return the value of 1 |
-| 3.| [isAscii](Libft/ft_isascii.c) | Returns 1 if c is an ASCII character; otherwise, zero |
-| 4.| [isDigit](Libft/ft_isdigit.c)| Function isdigit() takes a single argument in the form of an integer and returns the value of type int|
-| 5.| [isPrint](Libft/ft_isprint.c)| Returns 1 if the characet is printable| 
-| 6.| [Bzero](Libft/ft_bzero.c)| Sets everything to zero |
-| 7.| [Calloc](Libft/ft_calloc.c)| Allocates memory and sets the memory that has been allocated to zero|
-| 8.| [Memcmp](Libft/ft_cmemcmp.c)| It checks for strings and returns the difference, it also checks for null space|
-| 9.| [Memcpy](Libft/ft_memcpy.c)| Copies all the data from the **source** to the **destination** | 
-|10.| [Memset](Libft/ft_memset.c)| Fills the block of memory or the string to a particular value |
-|11.| [Memmove](Libft/ft_memmove.c) | Moves everythin from the **source** to the **destination**, handles overlap which memcpy cannot |
-|12.| [Memchr](Libft/ft_memchr.c) | It will look for a character inside the string and returns character from that position of the character|
-|13.| [Strchr](Libft/ft_strchr.c) | Looks for a specific character inside the string and returns the string from that character position | 
-|14.| [Strrchr](Libft/ft_strrchr.c) | Looks for a specific character but the last character inside that string and returns that character/string|
-|15.| [Strlen](Libft/ft_strlen.c) | Returns the string length | 
-|16.| [Strncmp](Libft/ft_strncmp.c)| Compares not more than n characters. If found a difference within the n value, it will return the difference|
-|17.| [Strrstr](Libft/ft_strrstr.c)| Returns the character inside the string where it last occured |
-|18.| [Strnstr](Libft/ft_strnstr.c)| Looks for a string inside a source string and returns the string if found inside the source string|
-|19.| [Split](Libft/ft_split.c) | Splits the strings into different positions| 
-|20.| [Strdup](Libft/ft_strdup.c) | duplisubstrthe string from the source to the destination |
-|21.| [Strjoin](Libft/ft_strjoin.c) | Joins both the source and destination string into another string (malloc) |
-|22.| [Strlcat](Libft/ft_strlcat.c) | Returns both the source and destination string concatination, but with restrictions | 
-|23.| [Strlcpy](Libft/ft_strlcpy.c)| Basically copies the source string to destination string but with a limitation of "how much to copy" |
-|24.| [Strtrim](Libft/ft_strtrim.c) | Removes the string from the start and end, specified by the user| 
-|25.| [Substr](Libft/ft_substr.c) | Subtracts the string given the parameters by the user. “We are going home” we specify where the index starting position is and we also assing n value to return that much of the string. Lets say start = 3 and n = 7, the function will return “are g” to be stored into another string(malloc) |
-|26.| [Atoi](Libft/ft_atoi.c)| Converts string to integers value |
-|27.| [Itoa](Libft/ft_itoa.c)| Converts integers to string literal |
-|28.| [ToUpper](Libft/ft_toupper.c)| Converts the character to uppercase|
-|29.| [ToLower](Libft/ft_tolower.c)| Converts the character to lowercase|
-|30.| [Strmapi](Libft/ft_strmapi.c)| Change the character using the (f) function|
-|31.| [Striteri](Libft/ft_striteri.c)| Changing the character through (f) function|
-|32.| [Putchar_fd](Libft/ft_putchar_fd.c)| Outputs the character c to the given file descriptor| 
-|33.| [Putstr_fd](Libft/ft_putstr_fd.c)| Outputs the string to the given file descriptor |
-|34.| [Putendl_fd](Libft/ft_putendl_fd.c)| Outputs a string to the file descriptor but ends with a newline|
-|35.| [Putnbr_fd](Libft/ft_putnbr_fd.c)| Outputs the integer n to given file descriptor 
+| 1.| [isAlnum](Libft/ft_isalnum.c) | Dizede alfabe ve rakam olup olmadığını kontrol eder; true ise 1 döndürür|
+| 2.| [isAlpha](Libft/ft_isalpha.c) | Dizeyi okuyun: Eğer alfabe varsa- 1 değerini döndürmelidir |
+| 3.| [isAscii](Libft/ft_isascii.c) | c bir ASCII karakteri ise 1 döndürür; aksi takdirde sıfır |
+| 4.| [isDigit](Libft/ft_isdigit.c)| isdigit() işlevi tamsayı biçiminde tek bir bağımsız değişken alır ve int türünde bir değer döndürür|
+| 5.| [isPrint](Libft/ft_isprint.c)| Karakter yazdırılabilir ise 1 döndürür| 
+| 6.| [Bzero](Libft/ft_bzero.c)| Her şeyi sıfıra ayarlar |
+| 7.| [Calloc](Libft/ft_calloc.c)| Bellek ayırır ve ayrılan belleği sıfıra ayarlar|
+| 8.| [Memcmp](Libft/ft_cmemcmp.c)| Dizeleri kontrol eder ve farkı döndürür, ayrıca boş alan olup olmadığını da kontrol eder|
+| 9.| [Memcpy](Libft/ft_memcpy.c)| **kaynaktaki** tüm verileri **hedefe** kopyalar | 
+|10.| [Memset](Libft/ft_memset.c)| Bellek bloğunu veya dizeyi belirli bir değere kadar doldurur |
+|11.| [Memmove](Libft/ft_memmove.c) | Her şeyi **kaynaktan** **hedefe** taşır, memcpy'nin yapamadığı çakışmaları halleder |
+|12.| [Memchr] (Libft/ft_memchr.c) | Dize içinde bir karakter arar ve karakterin o konumundan karakter döndürür|
+|13.| [Strchr] (Libft/ft_strchr.c) | Dize içinde belirli bir karakteri arar ve dizeyi bu karakter konumundan döndürür | 
+|14.| [Strrchr](Libft/ft_strrchr.c) | Belirli bir karakteri arar ancak bu karakter dizesi içindeki son karakterdir ve bu karakteri/dizeyi döndürür|
+|15.| [Strlen](Libft/ft_strlen.c) | Dize uzunluğunu döndürür | 
+|16.| [Strncmp](Libft/ft_strncmp.c)| En fazla n karakteri karşılaştırır. Eğer n değeri içinde bir fark bulunursa, farkı döndürür|
+|17.| [Strrstr](Libft/ft_strrstr.c)| Dize içinde en son oluştuğu karakteri döndürür |
+|18.| [Strnstr](Libft/ft_strnstr.c)| Bir kaynak dizenin içinde bir dize arar ve kaynak dizenin içinde bulunursa dizeyi döndürür|
+|19.| [Split](Libft/ft_split.c) | Dizeleri farklı konumlara böler| 
+|20.| [Strdup] (Libft/ft_strdup.c) | dizeyi kaynaktan hedefe duplisubstr
+|21.| [Strjoin] (Libft/ft_strjoin.c) | Kaynak ve hedef dizeyi başka bir dizede birleştirir (malloc) |
+|22.| [Strlcat] (Libft/ft_strlcat.c) | Hem kaynak hem de hedef dize birleşimini döndürür, ancak kısıtlamalar vardır | 
+|23.| [Strlcpy](Libft/ft_strlcpy.c)| Temel olarak kaynak dizeyi hedef dizeye kopyalar, ancak "ne kadar kopyalanacağı" konusunda bir sınırlama vardır |
+|24.| [Strtrim](Libft/ft_strtrim.c) | Kullanıcı tarafından belirtilen dizeyi başlangıç ve bitişten kaldırır| 
+|25.| [Substr](Libft/ft_substr.c) | Kullanıcı tarafından parametreleri verilen dizeyi çıkarır. "Eve gidiyoruz" dizesinin başlangıç pozisyonunun nerede olduğunu belirtiriz ve ayrıca dizenin o kadarını döndürmek için n değeri atarız. Diyelim ki başlangıç = 3 ve n = 7, fonksiyon başka bir dizeye depolanmak üzere "are g" döndürür (malloc) |
+|26.| [Atoi](Libft/ft_atoi.c)| Dizeyi tamsayı değerine dönüştürür |
+|27.| [Itoa](Libft/ft_itoa.c)| Tamsayıları dize değişmezine dönüştürür |
+|28.| [ToUpper](Libft/ft_toupper.c)| Karakteri büyük harfe dönüştürür|
+|29.| [ToLower](Libft/ft_tolower.c)| Karakteri küçük harfe dönüştürür|
+|30.| [Strmapi](Libft/ft_strmapi.c)| (f) fonksiyonunu kullanarak karakteri değiştirin|
+|31.| [Striteri](Libft/ft_striteri.c)| (f) işlevi aracılığıyla karakter değiştirme|
+|32.| [Putchar_fd](Libft/ft_putchar_fd.c)| c karakterini verilen dosya tanımlayıcısına çıktı olarak verir| 
+|33.| [Putstr_fd](Libft/ft_putstr_fd.c)| Dizeyi verilen dosya tanımlayıcısına çıktı olarak verir |
+|34.| [Putendl_fd](Libft/ft_putendl_fd.c)| Dosya tanımlayıcısına bir dize çıktısı verir ancak satırsonu ile biter|
+|35.| [Putnbr_fd](Libft/ft_putnbr_fd.c)| Verilen dosya tanımlayıcısına n tamsayısını çıktı olarak verir
+
 
 ---
 ### ✔️ BONUS PART 
 | S.No | **Function** | **Description** | 
 |------|----------|-------------|
-|36. | [Lstnew](Libft/ft_lstnew.c)| Allocates a new node and variable next is initialized to Null| 
-|37.| [Lstadd_front](Libft/ft_lstadd_front.c)| Adds the node new at the beginning of the list | 
-|38.| [Lstsize](Libft/ft_lstsize.c)| Counts the number of nodes in a list |
-|39.| [lstlast](Libft/ft_lstlast.c)| Returns the last node of the list| 
-|40.| [lstadd_back](Libft/ft_lstadd_back.c)| Adds the node new at the end of the list |
-|41.| [lstdelone](Libft/ft_lstdelone.c)| Free the node content using the delete and the next must not be freed|
-|42.| [lstclear](Libft/ft_lstclear.c)| Deletes and frees the given node and every successor of that node, using the del and free|
-|43.| [lstiter](Libft/ft_lstiter.c)| Iterates the list list and applies the function f on the content of each node. 
-|44.| [lstmap](Libft/ft_lstmap.c)| Creates a new list and applies the function of the f on the content of each node. The del function is used to delete the content of a node if needed.|
-
+|36. | [Lstnew](Libft/ft_lstnew.c)| Yeni bir düğüm tahsis eder ve next değişkeni Null olarak başlatılır| 
+|37.| [Lstadd_front](Libft/ft_lstadd_front.c)| Listenin başına yeni düğümü ekler | 
+|38.| [Lstsize](Libft/ft_lstsize.c)| Bir listedeki düğüm sayısını sayar |
+|39.| [lstlast](Libft/ft_lstlast.c)| Listenin son düğümünü döndürür| 
+|40.| [lstadd_back](Libft/ft_lstadd_back.c)| Listenin sonuna yeni düğümü ekler |
+|41.| [lstdelone](Libft/ft_lstdelone.c)| delete kullanarak düğüm içeriğini serbest bırakın ve sonraki serbest bırakılmamalıdır|
+|42.| [lstclear](Libft/ft_lstclear.c)| del ve free| kullanarak verilen düğümü ve bu düğümün her ardılını siler ve serbest bırakır
+|43.| [lstiter](Libft/ft_lstiter.c)| Listeyi yineler ve f işlevini her düğümün içeriğine uygular. 
+|44.| [lstmap](Libft/ft_lstmap.c)| Yeni bir liste oluşturur ve f fonksiyonunu her düğümün içeriğine uygular. del fonksiyonu, gerektiğinde bir düğümün içeriğini silmek için kullanılır.|
 --- 
 ## ✏️ THINGS TO READ ABOUT 
 
@@ -65,55 +65,54 @@
 <img src= "https://user-images.githubusercontent.com/88405217/184244154-60f36c2b-ecb4-4c91-8044-2444367b03a8.jpg">
 </p>
 
-```C
-//Generating an .O file 
-clang/gcc -c file.c 
-//Compressing all files together 
-clang/gcc file1.o fil2.o -o file -l m 
-```
-## Understanding wildcards & phony
-
-A single file name can specify many files using *wildcard characters*. The wildcard characters in `make` are ‘*’, ‘?’ and ‘[…]’, the same as in the Bourne shell. ***For example,*** *.c specifies a list of all the files (in the working directory) whose names end in ‘.c’.
-
-The character ‘~’ at the beginning of a file name also has special significance. If alone, or followed by a slash, it represents your home directory. For example ~/bin expands to /home/you/bin. If the ‘~’ is followed by a word, the string represents the home directory of the user named by that word. For example ~john/bin expands to /home/john/bin. On systems which don’t have a home directory for each user (such as MS-DOS or MS-Windows), this functionality can be simulated by setting the environment variable *HOME*
-
-## Wildcard examples
-To set `objects`to the expansion, instead use:
-
-```C
-`**objects := $(wildcard *.o)
-
-Some Wildcard Syntax:
-$@ : The filename representing the target.
-$^: the filenames of all the prerequisites, separated by spaces. 
-This list has duplicate filenames removed since for most uses, such as compiling, copying, etc., duplicates are not wanted.
-
-%.o:%.c -----> $(CC) $*(CFLAGS) -c -o ($@):targets %.o ($^):targets %.c
-```
-### Phony
-
-A phony target is one that is not really the name of a file; rather it is just a name for a recipe to be executed when you make an explicit request. **There are two reasons to use a phony target: to avoid a conflict with a file of the same name, and to improve performance**
-
 ## Writing Rules in MakeFiles
 
-c
+ibft.a’yı “NAME”e tanımladım aşağıda’da $(NAME)’i “all”a atadım all dediğim için hepsini kapsar.
 
-Create the archive. The specified archive is always created if it did not exist, when you request an update. But a warning is issued unless you specify in advance that you expect to create it, by using this modifier.
+Ve sistem “NAME” ile başlar.
 
-r
+⚡ $(wildcard *c)’yi SRCS(sources)’e atadım. Yani “wildcard” fonksiyonuyla bütün .c dosyalarını “SRCS” değişkenine atadık.
 
-Insert the files *member*... into archive (with replacement). This operation differs from q in that any previously existing members are deleted if their names match those being added.
+ “*c” Sol tarafta ne olursa olsun bütün .c uzantılı dosyaları alır.
+⚡ “WILDCARD” = O dizindeki bütün dosyaları listelemek için kullanılır.
 
-s
+⚡ “$” işaretinin iki farklı anlamı vardır birisi parantezin içinde hangi değişken adını yazdığımızda değişkenin değerini çağırırız. Diğer kullanımı da fonksiyon çağırmadır.
 
-Write an object-file index into the archive, or update an existing one, even if no other change is made to the archive. You may use this modifier flag either with any operation, or alone. Running "`ar s`" on an archive is equivalent to running [ranlib](http://unixhelp.ed.ac.uk/CGI/man-cgi?ranlib%201) on it.
-Therefore, `rcs`can be seen to mean `replace, create, sort
+⚡ OBJS = “SRCS”da bulunan bütün c uzantılı dosyaları .o uzantılı dosya adlarına değiştirdik ve bunları “OBJS”e atadık.
 
-```C
-CFILES= $(wildcard ./*.c) //Gets all the .c files in the directory and stores it into the variable called CFILES //
-$(NAME): $(OBJECTS)
-	ar -rcs $(NAME) $(OBJECTS)
-```
+⚡ Derleme shell komutunu “CC” olarak tanımladım shell komutunu değişkene atadık.
+
+⚡ Shell komutunu tekrardan “”CCFLAGS” olarak tanımladık.
+
+⚡ “PHONY” = Öncelikli çalıştırma işlemini yapar.Dizinde aramak yerine direkt kodu çalıştırır.Yani dosyamızın içinde eğer yazdığımız.(all, clean, fclean, re, bonus)’dan birisi varsa çalışmayacaktır.Öncelikli olarak tanımladığımız için “Mak-eFile” içinde bulup çalışacaktır.
+
+⚡ $(NAME): $(OBJS) “OBJS” Dosyalarını “NAME”e kural olarak belirle.
+
+ar rcs 
+(OBJS) = Yukarıda yazdığım kuralı da burada kullandım.Yani “NAME” olarak “LIBFT.A”ya çıktı verir.
+
+⚡ %.o:%.c “%” Hepsini kapsıyor Shell komutu olduğu için “%” işareti kullanırız.
+
+Alttaki de $(CC) -c “ˆ” tek tek gez komutudur.Yani tek tek gezerek derliyor.
+
+⚡ “:” tanımlama işaretidir.
+
+⚡Clean’e rm-f ile (OBJS) ve (BONUS_OBJS) bu nesneleri silme komutunu tanımladım.
+
+Sonrasında “clean”i de “fclean”e tanımladım “$(NAME)”de kini de sil dedim.Yani Libft.a’yı.
+
+⚡“re”de rebuildden geliyor = yani silip “$(NAME)”i yeniden oluşturuyor.
+
+⚡Subjects’de dediği gibi “OBJS” ve “BONUS_OBJS”i “bonus”a kural olarak belirliyoruz.
+
+Sonrasında da çıktı olarak bize hepsini veriyor.”$(NAME)”e göre bize 
+(BONUS_OBJS)
+
+⚡“ar rcs” Bir kitaplığı derlemek için “Makefile” kullanırken kullanacağınız en olası komuttur. r, kitaplık zaten mevcutsa, kitaplık içindeki eski dosyaları yeni dosyalarınızla değiştirin.c, mevcut değilse kütüphaneyi oluşturmak anlamına gelir.
+
+⚡Clean sadece oluşan “.o” uzantılı dosyaları siler.Fclean yaptığımda “NAME”i de silecektir.Yani libft.a’yı.
+
+
 #### 📹 Markdown tutorial 
 [![MARKDOWN TUTORIAL](http://img.youtube.com/vi/DtGrdB8wQ_8/0.jpg)](https://www.youtube.com/watch?v=DtGrdB8wQ_8)
 
