@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:28:30 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:12 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:44:22 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:44:23 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
-
-// int main()
-// {
-//     char dst[6] = "omerxs";
-//     char src[7] = "mustafa";
-//     ft_strlcpy(dst, src, 7);
-//     printf("%s", dst);
-// }

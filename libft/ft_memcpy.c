@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 20:21:28 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:56:15 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:42:37 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:42:39 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// int main()
-// {
-// char dest[9] = "123456789";
-// char src[4] = "abcd";
-// ft_memcpy(dest, src, 4);
-// printf("%s",dest);
-// }

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 19:03:42 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:56:28 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:42:54 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:42:55 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

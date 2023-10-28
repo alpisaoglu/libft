@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:28:46 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:56:53 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:43:29 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:43:31 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strchr(const char *str, int ch)
 {
@@ -20,9 +18,3 @@ char	*ft_strchr(const char *str, int ch)
 		return ((char *)str);
 	return (0);
 }
-
-// int main()
-// {
-//     char str[256] = "313131must3131";
-//     printf("%s", ft_strchr(str, 'm'));
-// }

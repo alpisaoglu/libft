@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:28:17 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:24 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:44:54 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:44:56 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main()
-// {
-//     char s1[] = "merhaba";
-//     char s2[] = "merdane";
-//     printf("%d", ft_strncmp(s1, s2, 5));
-// }

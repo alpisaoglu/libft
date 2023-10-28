@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 15:50:57 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:57 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:40:51 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:40:56 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -37,8 +35,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-
-// int main()
-// {
-//     printf("%d", ft_atoi("-123"));
-// }

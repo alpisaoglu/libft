@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 00:49:28 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:05 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:43:52 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:43:54 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3[i + j] = '\0';
 	return (s3);
 }
-// int main()
-// {
-//     char *str1 = "fatih";
-//     char *str2 = "furkan";
-
-//     printf("%s",ft_strjoin(str1,str2));
-// }

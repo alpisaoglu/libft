@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:29:04 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:55:15 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:41:30 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:41:32 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -20,10 +18,3 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-	printf("%d", ft_isdigit('1'));
-}
-*/

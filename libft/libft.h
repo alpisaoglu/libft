@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: fucalisk <fucalisk@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 18:59:43 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 18:12:16 by aisaoglu         ###   ########.fr       */
+/*   Updated: 2023/10/27 19:48:05 by fucalisk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
-# include <stdio.h>
-# include <string.h>
 # include <stdlib.h>
 
 typedef struct s_list

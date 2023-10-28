@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 20:40:38 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:54:51 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:41:05 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:41:06 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,21 +23,3 @@ void	*ft_calloc(size_t count, size_t size)
 		ft_bzero(all_mem, all_size);
 	return (all_mem);
 }
-
-// int main()
-// {
-// 	size_t	eleman = 5;
-// 	size_t	boyut = sizeof(int);
-// 	int *dizi = (int *)ft_calloc(eleman, boyut);
-// 	if (dizi != NULL)
-// 	{
-// 		for (size_t i = 0; i < eleman; i++)
-// 	{
-// 			printf("%d ", dizi[i]);
-// 	}
-//         free(dizi);
-//     } else {
-//         printf("Bellek tahsisi başarısız\n");
-//     }
-//     return 0;
-// }

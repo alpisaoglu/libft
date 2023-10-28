@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:27:35 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 18:12:56 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:41:39 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:41:40 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,20 +63,3 @@ char	*ft_itoa(int n)
 		new[0] = '-';
 	return (new);
 }
-
-// int	main(void)
-// {
-// 	int i = 0;
-// 	int j = -1234;
-// 	int k = -42;
-// 	int l = 2147483647;
-// 	int m = -2147483648;
-// 	int z = 1234;
-
-// 	printf("The result of %d in itoa is: %s\n", i, ft_itoa(i));
-// 	printf("The result of %d in itoa is: %s\n", j, ft_itoa(j));
-// 	printf("The result of %d in itoa is: %s\n", k, ft_itoa(k));
-// 	printf("The result of %d in itoa is: %s\n", l, ft_itoa(l));
-// 	printf("The result of %d in itoa is: %s\n", m, ft_itoa(m));
-// 	printf("The result of %d in itoa is: %s\n", z, ft_itoa(z));
-// }

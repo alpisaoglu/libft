@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 13:27:16 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:37 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:45:14 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:45:16 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i--;
 	return (ft_substr(s1, 0, i + 1));
 }
-
-// int main(){
-// 	char s1[] = "112321322fur1kan421231232131232131";
-// 	char set[] = "2134";
-
-// 	printf("%s", ft_strtrim(s1, set));
-// }

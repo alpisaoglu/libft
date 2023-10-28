@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:28:38 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:09 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:43:58 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:44:00 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[j] = '\0';
 	return (i + ft_strlen(src));
 }
-
-// int main()
-// {
-//     char dst[] = "fatih";
-//     printf("%zu", ft_strlcat(dst, "lorem ipsum dolor sit amet", 15));
-// }

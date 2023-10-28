@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:29:09 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:55:02 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:41:23 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:41:24 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

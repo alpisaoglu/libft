@@ -5,12 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 18:28:01 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:45 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:45:28 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:45:30 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -20,9 +18,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-// int main()
-// {
-//     int c = 'C';
-//     printf("%c", ft_tolower(c));
-// }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 18:48:56 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:57:33 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:45:10 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:45:12 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-// int main()
-// {
-//     printf("%s" , ft_strrchr("merhaba",97));
-// }

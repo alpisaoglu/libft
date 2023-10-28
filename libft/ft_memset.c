@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aisaoglu <aisaoglu@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 16:22:53 by flus              #+#    #+#             */
-/*   Updated: 2023/10/27 17:56:23 by aisaoglu         ###   ########.fr       */
+/*   Created: 2023/10/28 13:42:48 by aisaoglu          #+#    #+#             */
+/*   Updated: 2023/10/28 13:42:50 by aisaoglu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-// int main()
-// {
-//     char src[] = "mustafa";
-//     ft_memset(src, 48, 3);
-//     printf("%s", src);
-// }
