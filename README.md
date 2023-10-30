@@ -6,56 +6,56 @@
 ### :exclamation: MANDATORY PART 
 | S.No | **Function** | **Description** | 
 |------|----------|-------------|
-| 1.| [isAlnum](Libft/ft_isalnum.c) | Dizede alfabe ve rakam olup olmadığını kontrol eder; true ise 1 döndürür|
-| 2.| [isAlpha](Libft/ft_isalpha.c) | Dizeyi okuyun: Eğer alfabe varsa- 1 değerini döndürmelidir |
-| 3.| [isAscii](Libft/ft_isascii.c) | c bir ASCII karakteri ise 1 döndürür; aksi takdirde sıfır |
-| 4.| [isDigit](Libft/ft_isdigit.c)| isdigit() işlevi tamsayı biçiminde tek bir bağımsız değişken alır ve int türünde bir değer döndürür|
-| 5.| [isPrint](Libft/ft_isprint.c)| Karakter yazdırılabilir ise 1 döndürür| 
-| 6.| [Bzero](Libft/ft_bzero.c)| Her şeyi sıfıra ayarlar |
-| 7.| [Calloc](Libft/ft_calloc.c)| Bellek ayırır ve ayrılan belleği sıfıra ayarlar|
-| 8.| [Memcmp](Libft/ft_cmemcmp.c)| Dizeleri kontrol eder ve farkı döndürür, ayrıca boş alan olup olmadığını da kontrol eder|
-| 9.| [Memcpy](Libft/ft_memcpy.c)| **kaynaktaki** tüm verileri **hedefe** kopyalar | 
-|10.| [Memset](Libft/ft_memset.c)| Bellek bloğunu veya dizeyi belirli bir değere kadar doldurur |
-|11.| [Memmove](Libft/ft_memmove.c) | Her şeyi **kaynaktan** **hedefe** taşır, memcpy'nin yapamadığı çakışmaları halleder |
-|12.| [Memchr] (Libft/ft_memchr.c) | Dize içinde bir karakter arar ve karakterin o konumundan karakter döndürür|
-|13.| [Strchr] (Libft/ft_strchr.c) | Dize içinde belirli bir karakteri arar ve dizeyi bu karakter konumundan döndürür | 
-|14.| [Strrchr](Libft/ft_strrchr.c) | Belirli bir karakteri arar ancak bu karakter dizesi içindeki son karakterdir ve bu karakteri/dizeyi döndürür|
-|15.| [Strlen](Libft/ft_strlen.c) | Dize uzunluğunu döndürür | 
-|16.| [Strncmp](Libft/ft_strncmp.c)| En fazla n karakteri karşılaştırır. Eğer n değeri içinde bir fark bulunursa, farkı döndürür|
-|17.| [Strrstr](Libft/ft_strrstr.c)| Dize içinde en son oluştuğu karakteri döndürür |
-|18.| [Strnstr](Libft/ft_strnstr.c)| Bir kaynak dizenin içinde bir dize arar ve kaynak dizenin içinde bulunursa dizeyi döndürür|
-|19.| [Split] (Libft/ft_split.c) | Dizeleri farklı konumlara böler| 
-|20.| [Strdup] (Libft/ft_strdup.c) | dizeyi kaynaktan hedefe duplisubstr
-|21.| [Strjoin] (Libft/ft_strjoin.c) | Kaynak ve hedef dizeyi başka bir dizede birleştirir (malloc) |
-|22.| [Strlcat] (Libft/ft_strlcat.c) | Hem kaynak hem de hedef dize birleşimini döndürür, ancak kısıtlamalar vardır | 
-|23.| [Strlcpy](Libft/ft_strlcpy.c)| Temel olarak kaynak dizeyi hedef dizeye kopyalar, ancak "ne kadar kopyalanacağı" konusunda bir sınırlama vardır |
-|24.| [Strtrim](Libft/ft_strtrim.c) | Kullanıcı tarafından belirtilen dizeyi başlangıç ve bitişten kaldırır| 
-|25.| [Substr](Libft/ft_substr.c) | Kullanıcı tarafından parametreleri verilen dizeyi çıkarır. "Eve gidiyoruz" dizesinin başlangıç pozisyonunun nerede olduğunu belirtiriz ve ayrıca dizenin o kadarını döndürmek için n değeri atarız. Diyelim ki başlangıç = 3 ve n = 7, fonksiyon başka bir dizeye depolanmak üzere "are g" döndürür (malloc) |
-|26.| [Atoi](Libft/ft_atoi.c)| Dizeyi tamsayı değerine dönüştürür |
-|27.| [Itoa](Libft/ft_itoa.c)| Tamsayıları dize değişmezine dönüştürür |
-|28.| [ToUpper](Libft/ft_toupper.c)| Karakteri büyük harfe dönüştürür|
-|29.| [ToLower](Libft/ft_tolower.c)| Karakteri küçük harfe dönüştürür|
-|30.| [Strmapi](Libft/ft_strmapi.c)| (f) fonksiyonunu kullanarak karakteri değiştirin|
-|31.| [Striteri](Libft/ft_striteri.c)| (f) işlevi aracılığıyla karakter değiştirme|
-|32.| [Putchar_fd](Libft/ft_putchar_fd.c)| c karakterini verilen dosya tanımlayıcısına çıktı olarak verir| 
-|33.| [Putstr_fd](Libft/ft_putstr_fd.c)| Dizeyi verilen dosya tanımlayıcısına çıktı olarak verir |
-|34.| [Putendl_fd](Libft/ft_putendl_fd.c)| Dosya tanımlayıcısına bir dize çıktısı verir ancak satırsonu ile biter|
-|35.| [Putnbr_fd](Libft/ft_putnbr_fd.c)| Verilen dosya tanımlayıcısına n tamsayısını çıktı olarak verir
+| 1.| [isAlnum](libft/ft_isalnum.c) | Dizede alfabe ve rakam olup olmadığını kontrol eder; true ise 1 döndürür|
+| 2.| [isAlpha](libft/ft_isalpha.c) | Dizeyi okuyun: Eğer alfabe varsa- 1 değerini döndürmelidir |
+| 3.| [isAscii](libft/ft_isascii.c) | c bir ASCII karakteri ise 1 döndürür; aksi takdirde sıfır |
+| 4.| [isDigit](libft/ft_isdigit.c)| isdigit() işlevi tamsayı biçiminde tek bir bağımsız değişken alır ve int türünde bir değer döndürür|
+| 5.| [isPrint](libft/ft_isprint.c)| Karakter yazdırılabilir ise 1 döndürür| 
+| 6.| [Bzero](libft/ft_bzero.c)| Her şeyi sıfıra ayarlar |
+| 7.| [Calloc](libft/ft_calloc.c)| Bellek ayırır ve ayrılan belleği sıfıra ayarlar|
+| 8.| [Memcmp](libft/ft_cmemcmp.c)| Dizeleri kontrol eder ve farkı döndürür, ayrıca boş alan olup olmadığını da kontrol eder|
+| 9.| [Memcpy](libft/ft_memcpy.c)| **kaynaktaki** tüm verileri **hedefe** kopyalar | 
+|10.| [Memset](libft/ft_memset.c)| Bellek bloğunu veya dizeyi belirli bir değere kadar doldurur |
+|11.| [Memmove](libft/ft_memmove.c) | Her şeyi **kaynaktan** **hedefe** taşır, memcpy'nin yapamadığı çakışmaları halleder |
+|12.| [Memchr](libft/ft_memchr.c) | Dize içinde bir karakter arar ve karakterin o konumundan karakter döndürür|
+|13.| [Strchr](libft/ft_strchr.c) | Dize içinde belirli bir karakteri arar ve dizeyi bu karakter konumundan döndürür | 
+|14.| [Strrchr](libft/ft_strrchr.c) | Belirli bir karakteri arar ancak bu karakter dizesi içindeki son karakterdir ve bu karakteri/dizeyi döndürür|
+|15.| [Strlen](libft/ft_strlen.c) | Dize uzunluğunu döndürür | 
+|16.| [Strncmp](libft/ft_strncmp.c)| En fazla n karakteri karşılaştırır. Eğer n değeri içinde bir fark bulunursa, farkı döndürür|
+|17.| [Strrstr](libft/ft_strrstr.c)| Dize içinde en son oluştuğu karakteri döndürür |
+|18.| [Strnstr](libft/ft_strnstr.c)| Bir kaynak dizenin içinde bir dize arar ve kaynak dizenin içinde bulunursa dizeyi döndürür|
+|19.| [Split](libft/ft_split.c) | Dizeleri farklı konumlara böler| 
+|20.| [Strdup](libft/ft_strdup.c) | dizeyi kaynaktan hedefe duplisubstr
+|21.| [Strjoin](libft/ft_strjoin.c) | Kaynak ve hedef dizeyi başka bir dizede birleştirir (malloc) |
+|22.| [Strlcat](libft/ft_strlcat.c) | Hem kaynak hem de hedef dize birleşimini döndürür, ancak kısıtlamalar vardır | 
+|23.| [Strlcpy](libft/ft_strlcpy.c)| Temel olarak kaynak dizeyi hedef dizeye kopyalar, ancak "ne kadar kopyalanacağı" konusunda bir sınırlama vardır |
+|24.| [Strtrim](libft/ft_strtrim.c) | Kullanıcı tarafından belirtilen dizeyi başlangıç ve bitişten kaldırır| 
+|25.| [Substr](libft/ft_substr.c) | Kullanıcı tarafından parametreleri verilen dizeyi çıkarır. "Eve gidiyoruz" dizesinin başlangıç pozisyonunun nerede olduğunu belirtiriz ve ayrıca dizenin o kadarını döndürmek için n değeri atarız. Diyelim ki başlangıç = 3 ve n = 7, fonksiyon başka bir dizeye depolanmak üzere "are g" döndürür (malloc) |
+|26.| [Atoi](libft/ft_atoi.c)| Dizeyi tamsayı değerine dönüştürür |
+|27.| [Itoa](libft/ft_itoa.c)| Tamsayıları dize değişmezine dönüştürür |
+|28.| [ToUpper](libft/ft_toupper.c)| Karakteri büyük harfe dönüştürür|
+|29.| [ToLower](libft/ft_tolower.c)| Karakteri küçük harfe dönüştürür|
+|30.| [Strmapi](libft/ft_strmapi.c)| (f) fonksiyonunu kullanarak karakteri değiştirin|
+|31.| [Striteri](libft/ft_striteri.c)| (f) işlevi aracılığıyla karakter değiştirme|
+|32.| [Putchar_fd](libft/ft_putchar_fd.c)| c karakterini verilen dosya tanımlayıcısına çıktı olarak verir| 
+|33.| [Putstr_fd](libft/ft_putstr_fd.c)| Dizeyi verilen dosya tanımlayıcısına çıktı olarak verir |
+|34.| [Putendl_fd](libft/ft_putendl_fd.c)| Dosya tanımlayıcısına bir dize çıktısı verir ancak satırsonu ile biter|
+|35.| [Putnbr_fd](libft/ft_putnbr_fd.c)| Verilen dosya tanımlayıcısına n tamsayısını çıktı olarak verir
 
 
 ---
 ### ✔️ BONUS PART 
 | S.No | **Function** | **Description** | 
 |------|----------|-------------|
-|36. | [Lstnew](Libft/ft_lstnew.c)| Yeni bir düğüm tahsis eder ve next değişkeni Null olarak başlatılır| 
-|37.| [Lstadd_front](Libft/ft_lstadd_front.c)| Listenin başına yeni düğümü ekler | 
-|38.| [Lstsize](Libft/ft_lstsize.c)| Bir listedeki düğüm sayısını sayar |
-|39.| [lstlast](Libft/ft_lstlast.c)| Listenin son düğümünü döndürür| 
-|40.| [lstadd_back](Libft/ft_lstadd_back.c)| Listenin sonuna yeni düğümü ekler |
-|41.| [lstdelone](Libft/ft_lstdelone.c)| delete kullanarak düğüm içeriğini serbest bırakın ve sonraki serbest bırakılmamalıdır|
-|42.| [lstclear](Libft/ft_lstclear.c)| del ve free| kullanarak verilen düğümü ve bu düğümün her ardılını siler ve serbest bırakır
-|43.| [lstiter](Libft/ft_lstiter.c)| Listeyi yineler ve f işlevini her düğümün içeriğine uygular. 
-|44.| [lstmap](Libft/ft_lstmap.c)| Yeni bir liste oluşturur ve f fonksiyonunu her düğümün içeriğine uygular. del fonksiyonu, gerektiğinde bir düğümün içeriğini silmek için kullanılır.|
+|36. | [Lstnew](libft/ft_lstnew.c)| Yeni bir düğüm tahsis eder ve next değişkeni Null olarak başlatılır| 
+|37.| [Lstadd_front](libft/ft_lstadd_front.c)| Listenin başına yeni düğümü ekler | 
+|38.| [Lstsize](libft/ft_lstsize.c)| Bir listedeki düğüm sayısını sayar |
+|39.| [lstlast](libft/ft_lstlast.c)| Listenin son düğümünü döndürür| 
+|40.| [lstadd_back](libft/ft_lstadd_back.c)| Listenin sonuna yeni düğümü ekler |
+|41.| [lstdelone](libft/ft_lstdelone.c)| delete kullanarak düğüm içeriğini serbest bırakın ve sonraki serbest bırakılmamalıdır|
+|42.| [lstclear](libft/ft_lstclear.c)| del ve free| kullanarak verilen düğümü ve bu düğümün her ardılını siler ve serbest bırakır
+|43.| [lstiter](libft/ft_lstiter.c)| Listeyi yineler ve f işlevini her düğümün içeriğine uygular. 
+|44.| [lstmap](libft/ft_lstmap.c)| Yeni bir liste oluşturur ve f fonksiyonunu her düğümün içeriğine uygular. del fonksiyonu, gerektiğinde bir düğümün içeriğini silmek için kullanılır.|
 --- 
 ## ✏️ THINGS TO READ ABOUT 
 
