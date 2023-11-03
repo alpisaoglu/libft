@@ -113,8 +113,11 @@ Sonrasında da çıktı olarak bize hepsini veriyor.”$(NAME)”e göre bize
 ⚡Clean sadece oluşan “.o” uzantılı dosyaları siler.Fclean yaptığımda “NAME”i de silecektir.Yani libft.a’yı.
 
 
-#### 📹 Markdown tutorial 
-[![MARKDOWN TUTORIAL](http://img.youtube.com/vi/DtGrdB8wQ_8/0.jpg)](https://www.youtube.com/watch?v=DtGrdB8wQ_8)
+#### File Descriptor
+Dosya Tanımlayıcısı, dosyalara veya diğer input/output kaynaklarına erişmek için kullanılan bir tamsayıdır(Birnevi kimlik). Fd'nin bazı default atamaları vardır.
+0 = Standart Giriş - Klavyeden okuma
+1 = Standart Çıkış - Ekrana yazdırma
+2 = Standart Hata - Hata mesajı yazdırma
 
 
 
