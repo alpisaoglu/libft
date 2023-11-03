@@ -1,5 +1,5 @@
 # 42-LibFt- 
-![image](https://user-images.githubusercontent.com/88405217/192701681-4ed74a77-859f-4993-a71f-57328145951c.png) ![image](https://user-images.githubusercontent.com/88405217/192702080-69faa195-e289-4b99-90c7-c02f712c02f3.png)
+![image](https://user-images.githubusercontent.com/101434516/202919222-26f908d7-3904-484b-86d0-8746399c4f41.png)
 
 ## :books: Kendi yazdığınız ilk kütüphane
 
